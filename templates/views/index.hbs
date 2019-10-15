@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/img/weather.png">
+    <title>Weather</title>
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Use this to get your weather</p>
+        <div class="container">
+            <form>
+                <div class="form-group row">
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="search" placeholder="Location">
+                    </div>
+                    <div class="offset-sm-1 col-sm-2">
+                        <button class="btn">Search</button>
+                    </div>
+                </div>
+            </form>
+            <p id="success"></p>
+            <p id="error"></p>
+        </div>
+    </div>
+    {{>footer}}
+    <script src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body{
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.main-content{
+    flex-grow: 1;
+}
+.portrait{
+    width: 250px;  
+}
+footer{
+    color: #888;
+    border-top:  1px solid #eee;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+header{
+    margin: 16px 0 48px 0;
+}
+h1{
+    font-size: 64px;
+    margin-bottom: 14px;
+}
+header a{
+    color: #888;
+    text-decoration: none;
+    margin-right: 16px;
+}
+.btn{
+    color: white;
+    background: #888888;
+    border: 1px solid #888888
+}
+/* nodemon src/app.js -e js,hbs */

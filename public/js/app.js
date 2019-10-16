@@ -13,10 +13,11 @@ weatherForm.addEventListener('submit', (e)=>{
                 error.textContent = data.error;
                 success.textContent = "";
             } else{
-                let container = `${data.location}
-                PreciProbability: ${data.forecast.precipProbability}
-                Summary: ${data.forecast.summary}
-                Temperature: ${data.forecast.temperature}`;
+                let container = `Location: ${data.location}`+ "\n"+`
+                PreciProbability: ${data.forecast.precipProbability}`+ "\n"+`
+                Summary: ${data.forecast.summary}`+ "\n"+`
+                Temperature: ${data.forecast.temperature}`+ "\n"+`
+                Humidity: ${data.forecast.humidity}`;
                 success.textContent = container;
                 error.textContent ="";
                 // console.log(data.forecast)

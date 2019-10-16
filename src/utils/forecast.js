@@ -12,9 +12,10 @@ const forecast = (latitude, longitude, callback)=>{
             // console.log(body.daily.data[0].summary)
             console.log(body)
             callback(undefined, {
-                summary: body.daily.summary,
+                summary: body.currently.summary,
                 temperature: body.currently.temperature,
-                precipProbability: body.currently.precipProbability
+                precipProbability: body.currently.precipProbability,
+                humidity: body.currently.humidity
             })
         }
     })

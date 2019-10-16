@@ -38,3 +38,7 @@ header a{
     border: 1px solid #888888
 }
 /* nodemon src/app.js -e js,hbs */
+.img-fluid{
+    width: 400px;
+    max-height: 350px;
+}
